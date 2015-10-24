@@ -5,7 +5,12 @@
 #                       Data Science Specialisation
 #                       Getting and Cleaning Data
 #                       Course Project
+#
+#       Requires:       Samsung data in working directory
+#
 #########################################################################
+
+
 
 library(plyr)
 
