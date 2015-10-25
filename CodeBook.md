@@ -86,7 +86,16 @@
     <td>activity</td>
     <td>column in output_Averages.txt</td>
     <td>string</td>
-    <td>Activity being measured</td>
+    <td>Activity being measured 
+          <table>
+            <tr><td>WALKING</td></tr>
+            <tr><td>WALKING_UPSTAIRS</td></tr>
+            <tr><td>WALKING_DOWNSTAIRS</td></tr>
+            <tr><td>SITTING</td></tr>
+            <tr><td>STANDING</td></tr>
+            <tr><td>LAYING</td></tr>
+          </table>
+    </td>
   </tr>
   <tr>
     <td>tBodyAcc-mean()-XYZ</td>
