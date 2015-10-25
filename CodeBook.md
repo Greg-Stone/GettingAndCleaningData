@@ -88,13 +88,7 @@
     <td>string</td>
     <td><table>
             <tr><th>Activity being measured</th></tr>
-            <tr><td>WALKING</td></tr>
-            <tr><td>WALKING_UPSTAIRS</td></tr>
-            <tr><td>WALKING_DOWNSTAIRS</td></tr>
-            <tr><td>SITTING</td></tr>
-            <tr><td>STANDING</td></tr>
-            <tr><td>LAYING</td></tr>
-            <tr><td>LAYING 2</td></tr>
+            
           </table>
     </td>
   </tr>
