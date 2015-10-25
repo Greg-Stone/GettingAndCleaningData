@@ -86,7 +86,7 @@
     <td>activity</td>
     <td>column in output_Averages.txt</td>
     <td>string</td>
-    <td>ccc
+    <td><table></table>
     </td>
   </tr>
   <tr>
