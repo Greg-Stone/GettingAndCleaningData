@@ -26,15 +26,17 @@ library(plyr)
         subject_train <- read.table("subject_train.txt")
         subject_test <- read.table("subject_test.txt")
         
+        # Get column names from features file
+        colNames_features <- read.table("features.txt")
+        
+        # Get activities from activity_labels file
+        activities <- read.table("activity_labels.txt")
+        
 # Step 1 - Merges the training and the test sets to create one data set.
         x_data <- rbind(x_train, x_test)
         y_data <- rbind(y_train, y_test)
         subject_data <- rbind(subject_train, subject_test)
         
-        
-        # Get column names from features file
-        colNames_features <- read.table("features.txt")
-
 # Step 2 - Extracts only the measurements on the mean and standard deviation for each measurement.
 
         mean_std <- grep("-(mean|std)\\(\\)", colNames_features[, 2])
@@ -46,8 +48,6 @@ library(plyr)
         names(x_data) <- colNames_features[mean_std, 2]
 
 # Step 3 - Uses descriptive activity names to name the activities in the data set
-        
-        activities <- read.table("activity_labels.txt")
 
         # update values with correct activity names
         y_data[, 1] <- activities[y_data[, 1], 2]
@@ -60,13 +60,15 @@ library(plyr)
         # correct column name
         names(subject_data) <- "aPerson"
 
+# Step 5 - Combine subject_data, y_data and x_data in one data set.
+        
         # combine data in one data set
         all_data <- cbind(subject_data, y_data,x_data)
         
         #produce output for first dataset
         write.table(all_data, "output_complete.txt", row.name=FALSE)
 
-# Step 5 - From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+# Step 6 - From the data set in step 5, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
         # columns 1 and 2 are for aPerson and Activity, so apply function to 3:68 only 
         averages_data <- ddply(all_data, .(aPerson,activity), function(x) colMeans(x[, 3:68]))
