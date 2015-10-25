@@ -94,6 +94,7 @@
             <tr><td>SITTING</td></tr>
             <tr><td>STANDING</td></tr>
             <tr><td>LAYING</td></tr>
+            <tr><td>LAYING 2</td></tr>
           </table>
     </td>
   </tr>
