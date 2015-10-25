@@ -83,11 +83,10 @@
     <td>Indicates the person, eg. person 1, person 2 etc.</td>
   </tr>
   <tr>
-    <td><valign="top">activity</td>
-    <td><valign="top">column in output_Averages.txt</td>
-    <td><valign="top">string</td>
-    <td><valign="top"> 
-          <table>
+    <td>activity</td>
+    <td>column in output_Averages.txt</td>
+    <td>string</td>
+    <td><table>
             <tr><th>Activity being measured</th></tr>
             <tr><td>WALKING</td></tr>
             <tr><td>WALKING_UPSTAIRS</td></tr>
