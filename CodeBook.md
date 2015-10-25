@@ -86,10 +86,7 @@
     <td>activity</td>
     <td>column in output_Averages.txt</td>
     <td>string</td>
-    <td><table>
-            <tr><th>Activity being measured</th></tr>
-            
-          </table>
+    <td>ccc
     </td>
   </tr>
   <tr>
