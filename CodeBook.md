@@ -86,7 +86,16 @@
     <td>activity</td>
     <td>column in output_Averages.txt</td>
     <td>string</td>
-    <td><table></table>
+    <td>
+        <B>Activity being measured</B>
+        <ul>
+            <li>WALKING</li>
+            <li>WALKING_UPSTAIRS</li>
+            <li>WALKING_DOWNSTAIRS</li>
+            <li>SITTING</li>
+            <li>STANDING</li>
+            <li>LAYING</li>
+          </ul>
     </td>
   </tr>
   <tr>
